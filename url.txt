@@ -1,0 +1,8 @@
+Url Deployment:
+huggingface.co/spaces/ragprim/FantasticBNB
+
+Url Dashboard:
+https://lookerstudio.google.com/u/0/reporting/10246f2e-ef11-4fb1-bd99-9dfefe9a0d69/page/qgR
+
+Url PPT:
+https://docs.google.com/presentation/d/1yIgWPrhacqs7GO3iaDGY3cQXh8g4brEFZxV8XGMKcaQ/edit#slide=id.g270c83e9f15_0_0
