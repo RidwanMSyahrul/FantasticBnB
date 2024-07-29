@@ -21,17 +21,37 @@ The objective of this project is to create an accurate recommender system based 
 
 ## Jobdesk
 ### Data Scientist (DS)
-- Model creation is where DS creates models; Recommeder System and Clustering
+- Model creation is where DS creates models; Recommeder System and Clustering.
 - Model deployment is where DS deploys the models that were made into HuggingFace for it to be used by user.
 
 ### Data Engineer (DE)
-- Data Collecting is where DE collects USA AirBnB data from Kaggle. The data itself contains AirBnB list from 31 different cities in the USA from the year 2023
+- Data Collecting is where DE collects USA AirBnB data from Kaggle. The data itself contains AirBnB list from 31 different cities in the USA from the year 2023.
 - Data Cleaning is where DE clean the data; handling inconsistency of the data, handling duplicate data, filtering features that will be used by DA or DS, and handling missing values.
 
 ### Data Analyst (DA)
-- Visualization is where DA visualize the data features that affect the clusters
-- Reporting is where DA make a deep analysis and give insights from the collected data
+- Visualization is where DA visualize the data features that affect the clusters.
+- Reporting is where DA make a deep analysis and give insights from the collected data.
 
 Dashboard: [Click Here!](https://lookerstudio.google.com/reporting/10246f2e-ef11-4fb1-bd99-9dfefe9a0d69)
 
 Deployment - FantasticBNB: [Click Here!](https://huggingface.co/spaces/ragprim/FantasticBNB)
+
+## File info
+### Main Folder:
+- clustering.ipynb: This script consist of clustering model for the dataset and app.
+- recommender_system.ipynb: This script consist of recommender system model for the dataset and app.
+- de_data_baru.ipynb: This script consist of code for cleaning the dataset acquired.
+- listings_cleaned_new.csv: This is the cleaned dataset acquired from de_data_baru.ipynb script.
+- listings_clustering.csv: This is the dataset after being used in clustering.ipynb script.
+- EDA_after_2_clustering.ipynb: This script consist of Exploratory Analysis of the data after it being clustered into 2 classes.
+- EDA_after_3_clustering.ipynb: This script consist of Exploratory Analysis of the data after it being clustered into 3 classes.
+- f4_logo.png: This is the logo picture for the app.
+- url.txt: This text consist of links for deployment, dashboard, and powerpoint.
+### Deployment Folder:
+- app.py: This script will launch the application by calling other scripts such as eda.py, filtering.py, and prediction.py.
+- eda.py: This script consist of Exploratory Analysis of the data that will be shown in the app.
+- filtering.py: This script will act as the filter for users input on the app to give AirBnB recommandation based on it.
+- listing_clustered.csv: This is the cleaned and clustered AirBnB dataset for the app to use.
+- requirements.txt: This is the library list for huggingface to use for the app to work.
+### dags Folder:
+-F4_FP_DAG.py: This script consist of Directed Acyclic Graph, pipeline to do ETL on the dataset in Apache Airflow.
